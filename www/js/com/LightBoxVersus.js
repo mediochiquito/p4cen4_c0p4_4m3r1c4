@@ -64,7 +64,7 @@ function LightBoxVersus(nodo, parent)
 		inputLocal.type = 'text';
 		inputLocal.maxLength = 2;
 		$(holderInputs).append(inputLocal);
-		$(inputLocal).css({'width' : 50, 'height' : 25, margin:0, padding:0, 'box-sizing':'border-box','margin-left' : 40, 'border' : 'none', 'text-align' : 'center'});
+		$(inputLocal).css({'width' : 50, 'height' : 25, 'margin-left' : 40, 'border' : 'none', 'text-align' : 'center'});
 		$(inputLocal).numeric();
 		$(inputLocal).bind('keyup' , checkUp);
 		
