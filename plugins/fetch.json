@@ -47,6 +47,15 @@
         "is_top_level": true,
         "variables": {}
     },
+    "com.phonegap.plugins.PushPlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phonegap-build/PushPlugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
     "com.phonegap.plugins.facebookconnect": {
         "source": {
             "type": "git",
@@ -56,7 +65,7 @@
         "is_top_level": true,
         "variables": {
             "APP_ID": "811385505616414",
-            "APP_NAME": "ApuestaCoperaPacenacordova"
+            "APP_NAME": "Apuesta Copera"
         }
     }
 }
