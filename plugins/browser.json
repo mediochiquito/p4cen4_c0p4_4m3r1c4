@@ -64,12 +64,9 @@
         "org.apache.cordova.statusbar": {
             "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
         },
-        "com.phonegap.plugins.PushPlugin": {
-            "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
-        },
         "com.phonegap.plugins.facebookconnect": {
             "APP_ID": "811385505616414",
-            "APP_NAME": "Apuesta Copera",
+            "APP_NAME": "ApuestaCoperaPacenacordova",
             "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
         }
     },
