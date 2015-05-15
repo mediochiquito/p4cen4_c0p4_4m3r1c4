@@ -9,7 +9,7 @@ function LightBoxVersus(nodo, parent)
 		$(self.div).append(holderIndicadores);
 		$(holderIndicadores).css({'width' : '100%', 'height' : 50, 'float' : 'left', 'position' : 'relative', 'margin-top' : 10});
 
-	var indicadorLeft = document.createElement('div');
+	/*var indicadorLeft = document.createElement('div');
 		indicadorLeft.className = 'marcador-pronostico';
 		$(holderIndicadores).append(indicadorLeft);
 		$(indicadorLeft).css({'position' : 'absolute', 'left' : 25, 'top' : 15});
@@ -25,7 +25,7 @@ function LightBoxVersus(nodo, parent)
 		indicadorRight.className = 'marcador-pronostico';
 		$(holderIndicadores).append(indicadorRight);
 		$(indicadorRight).css({'position' : 'absolute', 'left' : 215, 'top' : 15});
-		$(indicadorRight).text('GANADOR');
+		$(indicadorRight).text('GANADOR');*/
 	
 	var holderDataPartido = document.createElement('div');
 		$(holderDataPartido).css({'width' : '100%', 'height' : 50, 'float' : 'left', 'position' : 'relative'});
@@ -61,7 +61,7 @@ function LightBoxVersus(nodo, parent)
 		$(holderInputs).css({'width' : '100%', 'height' : 35, 'float' : 'left', 'position' : 'relative', 'margin-top' : 5});
 		
 	var inputLocal = document.createElement('input');
-		inputLocal.type = 'number';
+		inputLocal.type = 'text';
 		inputLocal.maxLength = 2;
 		$(holderInputs).append(inputLocal);
 		$(inputLocal).css({'width' : 50, 'height' : 25, 'margin-left' : 40, 'border' : 'none', 'text-align' : 'center'});
@@ -69,7 +69,7 @@ function LightBoxVersus(nodo, parent)
 		$(inputLocal).bind('keyup' , checkUp);
 		
 	var inputVisitante = document.createElement('input');
-		inputVisitante.type = 'number';
+		inputVisitante.type = 'text';
 		inputVisitante.maxLength = 2;
 		$(holderInputs).append(inputVisitante);
 		$(inputVisitante).css({'width' : 50, 'height' : 25, 'margin-left' : 140, 'border' : 'none', 'text-align' : 'center'});		
@@ -93,7 +93,7 @@ function LightBoxVersus(nodo, parent)
 	var btnEnviar = document.createElement('div'); 
 		btnEnviar.id = 'btn-enviar-pronostico';
 		$(holderBotones).append(btnEnviar);
-		$(btnEnviar).text('ENVIAR');
+		$(btnEnviar).text('GUARDAR');
 
 		if(objApp.isTouch())
 			$(btnEnviar).bind('touchstart' , doCheckResultado);
@@ -103,7 +103,7 @@ function LightBoxVersus(nodo, parent)
 	var btnEditar = document.createElement('div'); 
 		btnEditar.id = 'btn-editar-pronostico';
 		$(holderBotones).append(btnEditar);
-		$(btnEditar).text('EDITAR');
+		$(btnEditar).text('GUARDAR');
 		$(btnEditar).css({'display' : 'none'});
 
 		if(objApp.isTouch())
@@ -131,7 +131,7 @@ function LightBoxVersus(nodo, parent)
 		$(inputLocal).attr('disabled' ,'disabled');
 		$(inputVisitante).attr('disabled' ,'disabled');
 
-		checkUp();
+		//checkUp();
 	}		
 			
 	function checkUp()

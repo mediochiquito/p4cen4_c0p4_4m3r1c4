@@ -74,7 +74,7 @@ var objApp;
 		function onDeviceReady()
 		{		
 
-			self.UUID = '9bfbb8f2c53b6074';
+			self.UUID = 'e190a8e3221cf1cf';
 			self.PLATFORM = 'Android';
 			
 			self._ManagePush = new ManagePush(); 
@@ -88,7 +88,7 @@ var objApp;
 				}catch(e){}
 
 				//alert('UUID: ' + self.UUID)
-	    		//self._ManagePush.registrar();	
+	    		self._ManagePush.registrar();	
    			}
 
 			$.ajax
@@ -111,7 +111,7 @@ var objApp;
 	
 		function backKeyDown()
 		{
-			if(historial[historial.length-1].seccion == 'inicio' || historial.length == 0)
+			if(historial[historial.length-1].seccion == 'inicio' || historial[historial.length-1].seccion == 'registro' || historial.length == 0)
 			{
 				navigator.app.exitApp();
     			e.preventDefault();
@@ -225,7 +225,7 @@ var objApp;
 		}
 		self.Navigate = function(seccion, nodo)
 		{
-			if(seccion == 'inicio')
+			if(seccion == 'inicio' || seccion == 'registro')
 				objHeader.ocultarBtn();
 			else
 				objHeader.mostrarBtn();

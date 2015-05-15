@@ -54,12 +54,12 @@ function ProximosPartidos(nodo)
 		icono.width = 35;
 		icono.src = 'img/general/menu/polla.png?ac=1';
 		$(holderTituloLightBox).append(icono);	
-		$(icono).css({'position' : 'absolute' , 'right' : 9, 'top' : 10});		
+		$(icono).css({'position' : 'absolute' , 'right' : 13, 'top' : 13});		
 		
 	var divScroll = document.createElement('div');
 		divScroll.className = 'divScroll';
 		$(holderItems).append(divScroll);
-		$(divScroll).css({'height' : altoPantalla, 'margin-top' : '-18px'});
+		$(divScroll).css({'height' : altoPantalla-40, 'margin-top' : '-18px'});
 		$(divScroll).css({'background':'rgba(255,255,255,0.6)'});
 
 	/*--------------------------------------------------------*/
@@ -105,9 +105,9 @@ function ProximosPartidos(nodo)
 		
 		var icono = new Image();
 			icono.width = 35;
-			icono.src = 'img/general/menu/noticias.png?ac=1';
+			icono.src = 'img/general/menu/polla.png?ac=1';
 			$(holderTituloApuesta).append(icono);	
-			$(icono).css({'position' : 'absolute' , 'right' : 9, 'top' : 10});		
+			$(icono).css({'position' : 'absolute' , 'right' : 13, 'top' : 13});		
 		
 		var holderApuestaContenido = document.createElement('div');
 			holderApuestaContenido.id = 'holder-apuesta-contenido';
@@ -177,6 +177,7 @@ function ProximosPartidos(nodo)
 		$(holderItems).transition({scale : 0.5, duration : 500}).transition({opacity : 0});
 		$(holderApuesta).stop().delay(500).fadeIn(500, function(){animando = false;});	
 	}
+    
 	function doCloseApuesta()
 	{
 		if(animando)
@@ -188,5 +189,4 @@ function ProximosPartidos(nodo)
 		$(holderItems).delay(500).transition({opacity : 1}).transition({scale : 1, duration : 500});
 		animando = false;	
 	}						
-	
 }

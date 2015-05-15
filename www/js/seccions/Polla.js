@@ -134,7 +134,7 @@
 		var btnEditar = document.createElement('div');
 			btnEditar.id = 'btn-editar';
 			$(divHolderEditar).append(btnEditar);
-			$(btnEditar).text('EDITAR PERFIL');
+			$(btnEditar).text('EDITAR NOTIFICACIONES');
 			$(btnEditar).bind('click' , doClickPerfil);		
 
 		/*PANEL PARTICIPACIONES*/

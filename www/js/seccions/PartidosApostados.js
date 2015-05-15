@@ -56,7 +56,7 @@ function PartidosApostados(nodo)
 	var divScroll = document.createElement('div');
 		divScroll.className = 'divScroll';
 		$(holderItems).append(divScroll);
-		$(divScroll).css({'height' : altoPantalla, 'margin-top' : 0});
+		$(divScroll).css({'height' : altoPantalla-40, 'margin-top' : 0});
 		$(divScroll).css({'background':'rgba(255,255,255,0.6)'});
 
 	function onCompleteXML(xml)

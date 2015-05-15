@@ -22,7 +22,7 @@
 			$(self.div).append(holderTituloRegistro);
 	
 		var titulo = document.createElement('h1');
-			$(titulo).text('REGISTRARSE');
+			$(titulo).text('NOTIFICACIONES');
 			$(titulo).css({'color' : '#FFF', 'margin-left' : 105});
 			$(holderTituloRegistro).append(titulo);
 

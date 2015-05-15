@@ -24,7 +24,7 @@
 			btnInicio.id = 'btn-inicio-header';
 			btnInicio.src = 'img/general/btnInicio.png';
 			$(self.div).append(btnInicio);
-			$(btnInicio).css({'position' : 'absolute', 'top' : 0, 'left' : '50%', 'margin-left' : -35});
+			$(btnInicio).css({'display':'none','position' : 'absolute', 'top' : 0, 'left' : '50%', 'margin-left' : -35});
 			$(btnInicio).bind('click' , doClick);
 			
 		self.animIn = function()
@@ -57,8 +57,8 @@
 			$(btnInicio).css({'display' : 'block'});
 		}		
 		
-		self.animIn();
 		self.ocultarBtn();		
+		self.animIn();
 	}
 	
 	window.Header = Header;
