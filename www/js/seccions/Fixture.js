@@ -77,7 +77,7 @@
 			holderGrupoContenido.id = 'holder-grupo-contenido';
 			holderGrupoContenido.className = 'divScroll';
 			$(holderGrupo).append(holderGrupoContenido);
-			$(holderGrupoContenido).css({'height' : altoPantalla, 'margin-top' : 0});
+			$(holderGrupoContenido).css({'height' : altoPantalla-40, 'margin-top' : 0});
 
 		$.ajax
 		({
