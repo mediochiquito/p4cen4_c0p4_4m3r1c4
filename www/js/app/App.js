@@ -74,13 +74,6 @@ var objApp;
 		function onDeviceReady()
 		{		
 
-			if (window.cordova.platformId == "browser") {
-					
-				//facebookConnectPlugin.browserInit('811385505616414');
-				
-			}
-
-
 			self.UUID = '9bfbb8f2c53b6074';
 			self.PLATFORM = 'Android';
 			

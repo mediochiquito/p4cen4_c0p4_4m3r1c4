@@ -30,7 +30,7 @@
 		var divScroll = document.createElement('div');
 			divScroll.className = 'divScroll';
 			$(holderItems).append(divScroll);
-			$(divScroll).css({'height' : altoPantalla});
+			$(divScroll).css({'height' : altoPantalla-40});
 		
 		var mapaWrapper = document.createElement('div');				
 			mapaWrapper.id = 'mapa-wrapper';

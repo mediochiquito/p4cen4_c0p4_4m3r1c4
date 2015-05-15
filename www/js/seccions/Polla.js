@@ -31,7 +31,7 @@
 		var divScroll = document.createElement('div');
 			divScroll.className = 'divScroll';
 			$(holderItems).append(divScroll);
-			$(divScroll).css({'height' : altoPantalla, 'margin-top' : 40});
+			$(divScroll).css({'height' : altoPantalla-40, 'margin-top' : 40});
 			
 		var holderDatosUsuario = document.createElement('div');
 			holderDatosUsuario.id = 'holder-datos-usuario';

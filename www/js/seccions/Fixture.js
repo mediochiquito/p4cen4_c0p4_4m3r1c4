@@ -24,7 +24,7 @@
 		var divScroll = document.createElement('div');
 			divScroll.className = 'divScroll';
 			$(holderItems).append(divScroll);
-			$(divScroll).css({'height' : altoPantalla});
+			$(divScroll).css({'height' : altoPantalla-40});
 			
 		/*--------------------------------------------*/
 		var partidosDelDia = document.createElement('div');
