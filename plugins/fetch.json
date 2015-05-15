@@ -49,8 +49,9 @@
     },
     "com.phonegap.plugins.facebookconnect": {
         "source": {
-            "type": "local",
-            "path": "/Users/mateomenrstrina/developer/cordova-plugins/phonegap-facebook-plugin"
+            "type": "git",
+            "url": "https://github.com/Wizcorp/phonegap-facebook-plugin",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {

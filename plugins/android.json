@@ -9,26 +9,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"android-package\" value=\"org.apache.cordova.facebook.ConnectPlugin\" /></feature>",
                             "count": 1
                         },
@@ -50,6 +30,26 @@
                         },
                         {
                             "xml": "<access origin=\"https://*.akamaihd.net\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -83,15 +83,15 @@
                     ],
                     "/*": [
                         {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 1
-                        },
-                        {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
                             "count": 1
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
                         }
                     ]
@@ -100,27 +100,27 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "com.phonegap.plugins.facebookconnect": {
+            "APP_ID": "811385505616414",
+            "APP_NAME": "ApuestaCoperaPacenacordova",
             "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
         },
-        "org.apache.cordova.statusbar": {
-            "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
-        },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
-        },
-        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
         },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
         },
-        "com.phonegap.plugins.facebookconnect": {
-            "APP_ID": "811385505616414",
-            "APP_NAME": "ApuestaCoperaPacenacordova",
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
+        },
+        "org.apache.cordova.statusbar": {
             "PACKAGE_NAME": "com.mdinteractivo.pacena.copa.america"
         }
     },

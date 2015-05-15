@@ -3,7 +3,7 @@
 	width:320px;
 	height:180px;
 	float:left;
-	margin-bottom:10px;
+	margin-bottom:5px;
 	background:rgba(255,255,255,0.6);	
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);			
 }
@@ -57,7 +57,7 @@
 	width:320px;
 	height:75px;
 	float:left;
-	margin-top:10px;
+	margin-bottom: 10px;
 	background:rgba(255,255,255,0.6);
 }
 .holder-grupo-contenido
