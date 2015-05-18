@@ -72,7 +72,7 @@ function LightBoxVersus(nodo, parent)
 		inputVisitante.type = 'text';
 		inputVisitante.maxLength = 2;
 		$(holderInputs).append(inputVisitante);
-		$(inputVisitante).css({'width' : 50, 'height' : 25, 'margin-left' : 140, 'border' : 'none', 'text-align' : 'center'});		
+		$(inputVisitante).css({'width' : 50, 'height' : 25,margin:0, padding:0, 'box-sizing':'border-box', 'margin-left' : 140, 'border' : 'none', 'text-align' : 'center'});		
 		$(inputVisitante).numeric();
 		$(inputVisitante).bind('keyup' , checkUp);
 	
