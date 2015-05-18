@@ -2,7 +2,7 @@ function ManagePush()
 {
 	var self = this;
 	var pushNotification;
-	this.token = 'harcodetokenpush123123123213213';
+	this.token = 'devpush';
 	this.plataform = '';
 
 	this.registrar = function()
@@ -14,7 +14,7 @@ function ManagePush()
 			pushNotification.register(
 				successHandler,
 				errorHandler, {
-					"senderID":"57995757235",
+					"senderID":"622827769285",
 					"ecb":"objApp._ManagePush.onNotificationGCM"
 				});
 			self.plataform = 'android'
